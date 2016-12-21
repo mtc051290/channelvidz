@@ -1,0 +1,20 @@
+.banner{
+	width: 100%;	
+}
+
+#vidlist li{
+	cursor: pointer;	
+}
+
+#vidlist img{
+	border: 1px solid #CC88CC;
+}
+
+#vidlist h3{
+	margin-left: 1px;
+}
+
+#showVideo{
+	width: 100%;
+	margin: 15px 0 15px 0;	
+}

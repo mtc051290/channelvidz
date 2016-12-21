@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="msapplication-tap-highlight" content="no" />
+    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, target-densitydpi=medium-dpi" />
+	<script type="text/javascript" src="cordova.js"></script>
+	<link rel="stylesheet" href="css/jquery.mobile.css">
+    <link rel="stylesheet" href="css/jquery.mobile.theme.css">
+    <link rel="stylesheet" type="text/css" href="css/app.css" />
+	<script type="text/javascript" src="js/jquery.js"></script>
+    <script type="text/javascript" src="js/jquery.mobile.js"></script>
+    <script type="text/javascript" src="js/app.js"></script>
+    <title>ChannelVidz</title>
+</head>
+
+<body>
+	<div data-role="app">
+    
+    
+    
+    
+        <div data-role="page" id="main">
+        
+            <div data-role="header">
+                <h1>MTM Soluciones</h1>
+                <a href="#options" class="ui-btn-right" data-icon="gear" data-transition="slide">Opciones</a> 
+            </div>
+            
+            <div data-role="content">
+                
+                <img class="banner" id="bannerMTM" src="img/mtmShowRoom.png"  alt="MTM Show Room 2017">
+                <!--<p><br>Esta es una app de muestra para mtm, va a quedar bien poderosa.</p>-->
+                
+                <div id="showVideo"></div>
+                
+                <ul id="vidlist" data-role="listview">
+                </ul>
+                
+            </div>
+            
+            <div data-role="footer">
+            	<center>
+                	<p><i>MTM Soluciones 2016</i></p>
+                </center>
+            </div>
+            
+            
+            
+            <div data-role="popup" id="popupDialog" data-overlay-theme="a" data-theme="c" data-dismissible="false" style="max-width:400px;" class="ui-corner-all">
+                <div data-role="header" data-theme="a" class="ui-corner-top">
+                     <h1>Canal</h1>
+                </div>
+                <div data-role="content" data-theme="d" class="ui-corner-bottom ui-content">
+                     <h3 class="ui-title">Ingrese un Canal</h3>
+        
+                    <input type="text" id="channelName" placeholder="Nombre del Canal" />
+                    <a id="channelBtnCancel" href="#" data-role="button" data-inline="true" data-rel="back" data-theme="c">Cancelar</a>
+                    <a id="channelBtnOK" href="#" data-role="button" data-inline="true" data-rel="back" data-transition="flow" data-theme="b">OK</a>
+                </div>
+            </div>
+            
+        </div> 
+        
+        
+        
+        
+        
+        
+        
+        
+        <div data-role="page" id="options">
+        
+            <div data-role="header">
+                <h1>MTM Soluciones</h1>
+                <a href="#main" class="ui-btn-left" data-icon="delete" data-transition="slide" data-direction="reverse">Regresar</a> 
+            </div>
+            
+            <div data-role="content">
+                
+                <img class="banner" src="img/mtmShowRoom.png"  alt="MTM Show Room 2017">
+                <!--<p><br>Esta es una app de muestra para mtm, va a quedar bien poderosa.</p>-->
+                
+                <div data-role="fieldcontain">
+                	<label for="channelOptions">Canal:</label>
+                    <input type="text" name="channelOptions" id="channelOptions" placeholder="Ingresa un canal">
+
+					
+                </div>
+                
+                
+                
+                <div data-role="fieldcontain">
+                	<label for="maxResultsOptions">Límite:</label>
+                    <input type="text" name="maxResultsOptions" id="maxResultsOptions" placeholder="Límite">
+                </div>
+                
+                <center>
+                        <input type="button" data-enhanced="true" 
+                        data-corners="false" value="Guardar" name="saveOptions"  id="saveOptions"
+                        class="ui-input-btn ui-btn ui-corner-all ">
+                        
+                        <input type="button" data-enhanced="true" 
+                        data-corners="false" value="Eliminar" name="clearOptions"  id="clearOptions"
+                        class="ui-input-btn ui-btn ui-corner-all ui-shadow">
+                </center>
+                
+                
+                
+            </div>
+            
+            <div data-role="footer">
+                <center>
+                	<p><i>MTM Soluciones 2016</i></p>
+                </center>
+            </div>
+            
+        </div> 
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+	</div>
+    
+</body>
+</html>
